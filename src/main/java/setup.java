@@ -8,9 +8,6 @@ import main.java.gui.ReverseStringGui;
 public class setup {
     public static void main(String[] args){
         ReverseStringGui reverseStringGui=new ReverseStringGui();
-
-        reverseStringGui.initReverseStringGui();
-        reverseStringGui.eventReverseStringGui();
-        reverseStringGui.addReverseStringGui();
+        reverseStringGui.run();
     }
 }

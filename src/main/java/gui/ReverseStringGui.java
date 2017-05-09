@@ -17,7 +17,6 @@ public class ReverseStringGui {
     private MyTextField outputTextField;
     private MyButton button;
 
-
     private ReverseString sourceString;
     private String reverseString;
 
@@ -30,6 +29,7 @@ public class ReverseStringGui {
         outputTextField=new MyTextField();
         button=new MyButton();
         sourceString=new ReverseString();
+        reverseString="";
         frame.setFrameTitle("字符串逆转");
         frame.setLayout(new GridLayout(3,3,3,3));
         inputLabel.setText("请输入字符串：");
@@ -56,6 +56,12 @@ public class ReverseStringGui {
         frame.add(outputTextField);
         frame.add(button);
         frame.showFrame();
+    }
+
+    public void run(){
+        initReverseStringGui();
+        eventReverseStringGui();
+        addReverseStringGui();
     }
 
     public void clickEvent(){
